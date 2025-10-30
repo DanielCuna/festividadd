@@ -234,3 +234,73 @@ footer p {
     .contenido img { width: 100%; }
     section { padding: 3rem 5%; }
 }
+
+a {
+    color: #ff9933;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #8b1e82;
+    padding: 4px 8px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+}
+
+.menu a {
+    display: inline-block;
+    color: #fff;
+    background-color: #b33c00;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+    transition: all 0.3s ease;
+    animation: resplandor-menu 3s ease-in-out infinite alternate;
+}
+
+.menu a:hover {
+    background-color: #ff9933;
+    color: #2b0034;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
+
+/* animación de resplandor suave para el botón del menú */
+@keyframes resplandor-menu {
+    0% { box-shadow: 0 0 8px #ff6600, 0 0 12px #ffb400; }
+    50% { box-shadow: 0 0 15px #ff9933, 0 0 25px #ffd966; }
+    100% { box-shadow: 0 0 10px #ff6600, 0 0 18px #ffb400; }
+}
+
+a.interno {
+    position: relative;
+    padding-left: 20px;
+}
+
+a.interno::before {
+    content: "←";
+    position: absolute;
+    left: 0;
+    color: #ffcc80;
+    font-weight: bold;
+}
+
+a.externo::after {
+    content: " 🔗";
+    font-size: 0.9em;
+    color: #ff9933;
+    transition: transform 0.3s ease;
+}
+
+a.externo:hover::after {
+    transform: translateX(3px);
+    color: #fff;
+}
+
