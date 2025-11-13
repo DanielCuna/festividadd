@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -31,7 +31,6 @@
 <section class="dia-de-muertos">
     <h3>Día de Muertos</h3>
     <div class="contenido">
-        
         <img src="ofrenda.jpg" alt="Ofrenda de Día de Muertos">
         <p>El Día de Muertos se celebra los días 1 y 2 de noviembre. Es una tradición ancestral que combina creencias indígenas con el catolicismo traído por los españoles. En esta festividad se colocan ofrendas con flores de cempasúchil, velas, fotografías y platillos favoritos de los difuntos, para guiar su regreso al mundo de los vivos.</p>
     </div>
@@ -40,7 +39,6 @@
 <section class="catrina">
     <h3>El Origen de la Catrina</h3>
     <div class="contenido">
-
         <img src="catrina.jpg" alt="La Catrina de Posada">
         <p>La Catrina fue creada por el grabador José Guadalupe Posada a principios del siglo XX. Originalmente llamada “La Calavera Garbancera”, era una crítica a las clases sociales que renegaban de sus raíces indígenas. Con el tiempo, se convirtió en un símbolo nacional de la muerte, la elegancia y la identidad mexicana.</p>
     </div>
@@ -48,6 +46,33 @@
 
 <section class="reflexion">
     <p>El Día de Muertos y la figura de la Catrina representan la esencia del pueblo mexicano: celebrar la vida incluso en la muerte, recordar con alegría y transformar el duelo en arte y tradición.</p>
+</section>
+
+<section class="formulario-satisfaccion">
+    <h3>Formulario de Satisfacción</h3>
+    <p>Tu opinión nos ayuda a mejorar. Cuéntanos qué te pareció nuestra página del Día de Muertos.</p>
+
+    <form action="https://formspree.io/f/TU_ID_AQUI" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" rows="5" placeholder="Cuéntanos qué te pareció la página..." required></textarea>
+
+        <label for="satisfaccion">Nivel de satisfacción:</label>
+        <select id="satisfaccion" name="satisfaccion" required>
+            <option value="">Selecciona una opción</option>
+            <option value="Excelente">Excelente</option>
+            <option value="Buena">Buena</option>
+            <option value="Regular">Regular</option>
+            <option value="Mala">Mala</option>
+        </select>
+
+        <button type="submit">Enviar Comentario</button>
+    </form>
 </section>
 
 <footer>
