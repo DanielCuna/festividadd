@@ -304,3 +304,70 @@ a.externo:hover::after {
     color: #fff;
 }
 
+.formulario-satisfaccion {
+    background: radial-gradient(circle at center, rgba(40, 0, 40, 0.8) 0%, rgba(10, 0, 10, 0.95) 100%);
+    border-top: 3px solid #ffb400;
+    border-bottom: 3px solid #ffb400;
+    padding: 4rem 10%;
+    text-align: center;
+    color: #ffe6c9;
+    box-shadow: 0 0 20px #ff660066;
+}
+
+.formulario-satisfaccion h3 {
+    font-family: 'Cinzel Decorative', serif;
+    color: #ffb400;
+    margin-bottom: 1rem;
+}
+
+.formulario-satisfaccion p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.formulario-satisfaccion form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.formulario-satisfaccion label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #ffcc80;
+}
+
+.formulario-satisfaccion input,
+.formulario-satisfaccion textarea,
+.formulario-satisfaccion select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ff9933;
+    background: #1a001a;
+    color: #ffe6c9;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.formulario-satisfaccion button {
+    display: block;
+    background-color: #b33c00;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.formulario-satisfaccion button:hover {
+    background-color: #ff9933;
+    color: #2b0034;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
